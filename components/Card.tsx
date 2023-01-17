@@ -50,7 +50,7 @@ const Card: FunctionComponent = () => {
                 <li className='flex justify-between text-[22px] font-bold py-[1px]'>
                   <span>Rent</span>
                   <div>
-                    <span>&#8377;{15000}</span>
+                    <span className='text-green-600'>&#8377;{15000}</span>
                   </div>
                 </li>
               </ul>

@@ -6,6 +6,7 @@ import { CgSmartHomeRefrigerator } from 'react-icons/cg'
 import { GiWashingMachine, GiPathDistance, GiRotaryPhone } from 'react-icons/gi'
 import { IoIosPeople } from 'react-icons/io'
 import { BsFillPersonFill, BsWifi, BsHouseDoor } from 'react-icons/bs'
+import Map from './Map'
 
 const Modal: FunctionComponent = () => {
   return (
@@ -146,10 +147,10 @@ const Modal: FunctionComponent = () => {
         </div>
     </section>
     <section className='flex flex-col rounded-r-xl bg-neutral-600/30 w-[65%]'>
-        <div className='flex items-center justify-center lg:h-[55%]'>
-            Map to be added 
+        <div className='flex items-center justify-center h-[55%] w-full'>
+            <Map/>
         </div>
-        <div className='flex items-center justify-center lg:h-[45%]'>
+        <div className='flex items-center justify-center h-[45%]'>
             Photos to be added
         </div>
     </section>

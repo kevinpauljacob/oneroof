@@ -16,3 +16,8 @@ body {
   overflow-x: hidden;
   font-family: 'Comfortaa', cursive;
 }
+
+mapstyles {
+  width: 100%;
+  height: 100%;
+}
