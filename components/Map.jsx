@@ -1,13 +1,13 @@
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 
 function MapComponent() {
   return (
     <GoogleMap
-      zoom={10}
-      center={{ lat: 44, lng: -80 }}
-      mapContainerClassName="h-full w-full"
+      zoom={16}
+      center={{ lat: 12.827649, lng: 80.048997 }}
+      mapContainerClassName="rounded-tr-xl h-full w-full"
     >
-      <Marker position={{ lat: 44, lng: -80 }} />
+      <MarkerF position={{ lat: 12.827649, lng: 80.048997 }} />
     </GoogleMap>
   );
 }
