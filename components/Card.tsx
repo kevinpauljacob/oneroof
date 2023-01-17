@@ -58,8 +58,8 @@ const Card: FunctionComponent = () => {
         </div>
     </div>
     { modal &&
-      <div className='z-10 fixed top-0 left-0 flex justify-center items-center bg-neutral-600/60 backdrop-blur-lg h-screen w-full'>
-        <div onClick={handleModal} className='fixed top-[5%] right-[6.5%] text-white'>
+      <div className='z-10 fixed top-0 left-0 flex justify-center items-center bg-neutral-600/60 lg:backdrop-blur-lg h-screen w-full'>
+        <div onClick={handleModal} className='fixed top-[2%] lg:top-[5%] right-[2%] lg:right-[4%] xl:right-[6.5%] text-white'>
           <CgClose size={40}/>
         </div>
         <Modal/>

@@ -9,8 +9,8 @@ import { BsFillPersonFill, BsWifi, BsHouseDoor } from 'react-icons/bs'
 
 const Modal: FunctionComponent = () => {
   return (
-    <div className='flex bg-white/70 rounded-xl h-[85%] w-[70%]'>
-    <section className='flex flex-col justify-between p-[30px] w-[45%]'>
+    <div className='flex flex-col lg:flex-row bg-white/90 lg:bg-white/70 rounded-xl lg:h-[85%] lg:w-[80%] xl:w-[70%]'>
+    <section className='flex flex-col justify-between max-[450px]:p-[15px] p-[30px] lg:w-[50%] xl:w-[45%]'>
         <div>
             <h3 className='text-[30px] font-bold mt-[10px]'>
                 Estancia Appartments
@@ -146,10 +146,10 @@ const Modal: FunctionComponent = () => {
         </div>
     </section>
     <section className='flex flex-col rounded-r-xl bg-neutral-600/30 w-[65%]'>
-        <div className='flex items-center justify-center h-[55%]'>
+        <div className='flex items-center justify-center lg:h-[55%]'>
             Map to be added 
         </div>
-        <div className='flex items-center justify-center h-[45%]'>
+        <div className='flex items-center justify-center lg:h-[45%]'>
             Photos to be added
         </div>
     </section>
