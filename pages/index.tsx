@@ -28,7 +28,7 @@ const Home: NextPage<Props> = () => {
           <Filter/>
           <Socials/>
         </section>
-        <section className='bg-gradient-to-tr from-[#C2B9F2]/60 to-[#ACDFF2]/60 lg:w-[65%]'>
+        <section className='relative bg-gradient-to-tr from-[#C2B9F2]/60 to-[#ACDFF2]/60 lg:w-[65%]'>
           <Listing/>
         </section>
       </main>
