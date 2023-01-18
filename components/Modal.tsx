@@ -11,10 +11,10 @@ import Slider from './Slider'
 
 const Modal: FunctionComponent = () => {
   return (
-    <div className='flex flex-col lg:flex-row bg-white/90 lg:bg-white/70 rounded-xl lg:h-[85%] lg:w-[80%] xl:w-[70%]'>
-    <section className='flex flex-col justify-between max-[450px]:p-[15px] p-[30px] lg:w-[50%] xl:w-[45%]'>
+    <div className='flex flex-col min-[1200px]:flex-row bg-white/90 min-[1200px]:bg-white/70 rounded-xl h-screen min-[1200px]:h-[85%] w-full min-[1200px]:w-[90%] 2xl:w-[70%] overflow-auto'>
+    <section className='flex flex-col justify-between max-[450px]:p-[15px] p-[60px] min-[1200px]:p-[30px] min-[1200px]:w-[45%] w-full'>
         <div>
-            <h3 className='text-[30px] font-bold mt-[10px]'>
+            <h3 className='text-[30px] font-bold max-[450px]:mt-[50px] mt-[10px]'>
                 Estancia Appartments
             </h3>
             <p className='flex mb-[10px]'>
@@ -147,11 +147,11 @@ const Modal: FunctionComponent = () => {
             </div>
         </div>
     </section>
-    <section className='flex flex-col rounded-r-xl bg-neutral-700/10 w-[65%]'>
-        <div className='flex items-center justify-center h-[55%] w-full'>
+    <section className='flex flex-col justify-between rounded-r-xl min-[1200px]:bg-neutral-700/10 w-[85%] min-[1200px]:w-[55%] max-[1199px]:mb-[60px] mx-auto'>
+        <div className='min-h-[400px] min-[1200px]:h-[55%] w-full max-[1199px]:mb-[50px]'>
             <Map/>
         </div>
-        <div className='flex items-center justify-center h-[45%]'>
+        <div className='min-[1200px]:h-[45%] w-full'>
             <Slider/>
         </div>
     </section>

@@ -5,7 +5,7 @@ function MapComponent() {
     <GoogleMap
       zoom={16}
       center={{ lat: 12.827649, lng: 80.048997 }}
-      mapContainerClassName="rounded-tr-xl h-full w-full"
+      mapContainerClassName="max-[1199px]:rounded-xl rounded-tr-xl h-full w-full"
     >
       <MarkerF position={{ lat: 12.827649, lng: 80.048997 }} />
     </GoogleMap>
