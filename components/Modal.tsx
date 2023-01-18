@@ -10,11 +10,12 @@ import Map from './Map'
 import Slider from './Slider'
 
 const Modal: FunctionComponent = () => {
+    
   return (
     <div className='flex flex-col min-[1200px]:flex-row bg-white/90 min-[1200px]:bg-white/70 rounded-xl h-screen min-[1200px]:h-[85%] w-full min-[1200px]:w-[90%] 2xl:w-[70%] overflow-auto'>
-    <section className='flex flex-col justify-between max-[450px]:p-[15px] p-[60px] min-[1200px]:p-[30px] min-[1200px]:w-[45%] w-full'>
+    <section className='flex flex-col justify-between max-[472px]:p-[15px] p-[60px] min-[1200px]:p-[30px] min-[1200px]:w-[45%] w-full'>
         <div>
-            <h3 className='text-[30px] font-bold max-[450px]:mt-[50px] mt-[10px]'>
+            <h3 className='text-[30px] font-bold max-[472px]:mt-[50px] mt-[10px]'>
                 Estancia Appartments
             </h3>
             <p className='flex mb-[10px]'>

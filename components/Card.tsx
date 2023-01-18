@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 import { HiOutlineMapPin } from 'react-icons/hi2'
 import { CgClose } from 'react-icons/cg'
 import Image from 'next/image'
@@ -14,6 +14,13 @@ const Card: FunctionComponent = () => {
       ? setModal(false)
       : setModal(true)
   }
+
+  useEffect(()  => {
+    document.body.style.overflowY = 'hidden';
+    return () => {
+      document.body.style.removeProperty('overflowY');
+    };
+  });
 
   return (
     <>
