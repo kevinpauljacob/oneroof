@@ -1,6 +1,7 @@
+"use client"
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Prop from '../components/Property'
+import Prop from '../../components/Property'
 
 const Property: NextPage = () => {
   return (
