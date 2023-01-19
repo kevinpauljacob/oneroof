@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-import '../styles/globals.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import Hero from '../components/Hero'
