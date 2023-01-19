@@ -3,12 +3,16 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
-export default defineConfig({
-  name: 'default',
-  title: 'oneroof',
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT!;
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 
-  projectId: 'xlsao0eb',
-  dataset: 'production',
+export default defineConfig({
+  basePath: "/studio",
+  name: 'OneRoof_Studio',
+  title: 'OneRoof Studio',
+
+  projectId,
+  dataset,
 
   plugins: [deskTool(), visionTool()],
 

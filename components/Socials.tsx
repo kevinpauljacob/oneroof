@@ -15,18 +15,13 @@ const Socials: FunctionComponent = () => {
         </div>
         <div className='flex justify-center font-semibold my-[10px]'>
             View source code on 
-            <span className='underline underline-offset-2 animate-pulse mx-[5px]'>
+            <span className='underline underline-offset-2 mx-[5px]'>
                 <Link href="">Github</Link>
             </span> 
         </div>
-        <Link href="/contribute" className='flex justify-center font-semibold' >
-            <p>
-                Contribute to the Page
-            </p>
-            <p>
-                <TbExternalLink/>
-            </p>
-        </Link>
+        <div className='flex justify-center font-semibold animate-pulse my-[10px]'>
+            <Link href="/contribute">Contribute to the page</Link>
+        </div>
     </div>
   )
 }
