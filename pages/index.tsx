@@ -25,7 +25,7 @@ const Home: NextPage<Props> = () => {
       <main className='flex flex-col lg:flex-row justify-end min-h-screen'>
         <section className='lg:fixed lg:left-0 flex flex-col justify-center lg:w-[35%] lg:h-screen mt-[50px] lg:mt-[0px] mb-[20px] lg:mb-[0px]'>
           <Hero/>
-          <Filter/>
+          {/* <Filter/> */}
           <Socials/>
         </section>
         <section className='relative bg-gradient-to-tr from-[#C2B9F2]/60 to-[#ACDFF2]/60 lg:w-[65%]'>

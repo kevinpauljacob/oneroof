@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 import Link from 'next/link'
 import { GiMineralHeart } from 'react-icons/gi'
+import { TbExternalLink } from 'react-icons/tb'
 import { FaLinkedin, FaTwitterSquare, FaGithubSquare, FaBlackTie } from 'react-icons/fa'
 
 const Socials: FunctionComponent = () => {
@@ -18,6 +19,14 @@ const Socials: FunctionComponent = () => {
                 <Link href="">Github</Link>
             </span> 
         </div>
+        <Link href="/contribute" className='flex justify-center font-semibold' >
+            <p>
+                Contribute to the Page
+            </p>
+            <p>
+                <TbExternalLink/>
+            </p>
+        </Link>
     </div>
   )
 }

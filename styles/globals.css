@@ -18,11 +18,20 @@ body {
 }
 
 
-.swiper-button-next,
+.swiper-button-next  {
+  margin: 10px;
+  padding: 30px;
+  color: white !important;
+  background-color: rgb(0, 0, 0, 0.6) !important;
+  border-radius: 10%;
+}
+
 .swiper-button-prev {
-    right: 10px;
-    padding: 5px;
-    color: white !important;
+  margin: 10px;
+  padding: 30px;
+  color: white !important;
+  background-color: rgb(0, 0, 0, 0.6) !important;
+  border-radius: 10%;
 }
 
 .swiper-pagination-bullet {

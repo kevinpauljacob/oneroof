@@ -1,30 +1,13 @@
-import { FunctionComponent, useState, useEffect } from 'react'
+import { FunctionComponent } from 'react'
 import { HiOutlineMapPin } from 'react-icons/hi2'
-import { CgClose } from 'react-icons/cg'
 import Image from 'next/image'
+import Link from 'next/link'
 import City from '../public/assets/city.jpg'
-import Modal from './Modal'
 
 const Card: FunctionComponent = () => {
-
-  const [modal, setModal] = useState(false);
-
-  const handleModal = () => {
-    modal
-      ? setModal(false)
-      : setModal(true)
-  }
-
-  useEffect(()  => {
-    document.body.style.overflowY = 'hidden';
-    return () => {
-      document.body.style.removeProperty('overflowY');
-    };
-  });
-
   return (
     <>
-    <div onClick={handleModal} className='relative text-neutral-600 bg-neutral-200/50 shadow-2xl rounded-2xl max-w-[320px] p-[15px]'>
+    <Link href="/property" className='relative text-neutral-600 bg-neutral-200/50 shadow-2xl rounded-xl max-w-[320px] p-[15px]'>
         <div className='relative'>
             <Image className='rounded-2xl' src={City} alt="Property"/>
             <div className='h-[170px] w-full'>
@@ -63,15 +46,7 @@ const Card: FunctionComponent = () => {
               </ul>
             </div>
         </div>
-    </div>
-    { modal &&
-      <div className='z-10 fixed top-0 left-0 flex justify-center items-center bg-neutral-600/60 backdrop-blur-lg h-screen w-full'>
-        <div onClick={handleModal} className='fixed top-[2%] right-[2%] min-[1200px]:text-white'>
-          <CgClose size={40}/>
-        </div>
-        <Modal/>
-      </div>
-    }
+    </Link>
     </>
   )
 }

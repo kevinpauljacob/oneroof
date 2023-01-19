@@ -9,11 +9,14 @@ import { BsFillPersonFill, BsWifi, BsHouseDoor } from 'react-icons/bs'
 import Map from './Map'
 import Slider from './Slider'
 
-const Modal: FunctionComponent = () => {
+const Property: FunctionComponent = () => {
     
   return (
-    <div className='flex flex-col min-[1200px]:flex-row bg-white/90 min-[1200px]:bg-white/70 rounded-xl h-screen min-[1200px]:h-[85%] w-full min-[1200px]:w-[90%] 2xl:w-[70%] overflow-auto'>
-    <section className='flex flex-col justify-between max-[472px]:p-[15px] p-[60px] min-[1200px]:p-[30px] min-[1200px]:w-[45%] w-full'>
+    <div className='
+        flex flex-col min-[1200px]:flex-row 
+        h-screen min-[1200px]:h-[85%] 
+        w-full min-[1200px]:w-[90%] 2xl:w-[80%]'>
+    <section className='flex flex-col justify-between max-[472px]:m-[15px] m-[60px] min-[1200px]:m-[50px] min-[1200px]:w-[45%] w-full'>
         <div>
             <h3 className='text-[30px] font-bold max-[472px]:mt-[50px] mt-[10px]'>
                 Estancia Appartments
@@ -118,7 +121,7 @@ const Modal: FunctionComponent = () => {
                 </li>
             </ul>
             <ul className='flex flex-col'>
-                <li className='text-[20px] font-semibold border-b border-neutral-400 py-[2px] mt-[30px] mb-[10px]'>
+                <li className='text-[20px] font-semibold border-b border-neutral-400 py-[2px] mt-[30px]'>
                     Contact Details:
                 </li>
                 <li className='flex justify-between my-[2px]'>
@@ -148,11 +151,11 @@ const Modal: FunctionComponent = () => {
             </div>
         </div>
     </section>
-    <section className='flex flex-col justify-between rounded-r-xl min-[1200px]:bg-neutral-700/10 w-[85%] min-[1200px]:w-[55%] max-[1199px]:mb-[60px] mx-auto'>
-        <div className='min-h-[400px] min-[1200px]:h-[55%] w-full max-[1199px]:mb-[50px]'>
+    <section className='flex flex-col max-[1200px]:justify-between justify-center w-[85%] min-[1200px]:w-[55%] max-[1199px]:mb-[60px] mx-auto'>
+        <div className='min-h-[400px] min-[1200px]:h-[45%] w-full mb-[10px] max-[1199px]:mb-[50px]'>
             <Map/>
         </div>
-        <div className='min-[1200px]:h-[45%] w-full'>
+        <div className='rounded-xl min-[1200px]:h-[45%] w-full max-[1199px]:mb-[50px]'>
             <Slider/>
         </div>
     </section>
@@ -160,4 +163,4 @@ const Modal: FunctionComponent = () => {
   )
 }
 
-export default Modal
+export default Property

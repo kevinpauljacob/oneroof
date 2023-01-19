@@ -15,7 +15,7 @@ const Hero: FunctionComponent = () => {
         <p className="text-[20px] text-center font-semibold">
           Renting options near SRMIST made easy!
         </p>
-        <div className="flex justify-between items-center text-neutral-600 bg-neutral-300 rounded-xl shadow-2xl w-full px-[30px] py-[10px] mt-[50px] mb-[30px]">
+        <div className="flex justify-between items-center text-neutral-600 bg-neutral-300 rounded-lg shadow-2xl w-full px-[30px] py-[10px] mt-[50px] mb-[30px]">
           <span className="font-bold">
             Search for PG&apos;s and Apartments.
           </span>
