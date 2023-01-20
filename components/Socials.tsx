@@ -7,7 +7,7 @@ import { FaLinkedin, FaTwitterSquare, FaGithubSquare, FaBlackTie } from 'react-i
 const Socials: FunctionComponent = () => {
   return (
     <div>
-        <div className='flex justify-center font-semibold mt-[30px]'>
+        <div className='flex justify-center font-semibold'>
             Made with 
             <span className='mx-[5px]'>
                 <GiMineralHeart size={25}/>

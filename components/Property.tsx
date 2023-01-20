@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FunctionComponent } from 'react'
 import { HiOutlineMapPin } from 'react-icons/hi2'
 import { MdOutlineCall, MdOutlineFastfood } from 'react-icons/md'
@@ -5,6 +6,7 @@ import { FaFan, FaToilet } from 'react-icons/fa'
 import { CgSmartHomeRefrigerator } from 'react-icons/cg'
 import { GiWashingMachine, GiPathDistance, GiRotaryPhone } from 'react-icons/gi'
 import { IoIosPeople } from 'react-icons/io'
+import { IoReturnDownBack } from 'react-icons/io5'
 import { BsFillPersonFill, BsWifi, BsHouseDoor } from 'react-icons/bs'
 import Map from './Map'
 import Slider from './Slider'
@@ -16,9 +18,13 @@ const Property: FunctionComponent = () => {
         flex flex-col min-[1200px]:flex-row 
         h-screen min-[1200px]:h-[85%] 
         w-full min-[1200px]:w-[90%] 2xl:w-[80%]'>
-    <section className='flex flex-col justify-between max-[472px]:m-[15px] m-[60px] min-[1200px]:m-[50px] min-[1200px]:w-[45%] w-full'>
+    <section className='flex flex-col justify-between max-[412px]:p-[15px] p-[30px] min-[1200px]:p-[50px] min-[1200px]:w-[45%] w-full'>
         <div>
-            <h3 className='text-[30px] font-bold max-[472px]:mt-[50px] mt-[10px]'>
+            <Link href="/" className='flex items-center'>
+                <span className='px-[5px]'><IoReturnDownBack/></span>
+                Go Back
+            </Link>
+            <h3 className='text-[30px] font-bold mt-[10px]'>
                 Estancia Appartments
             </h3>
             <p className='flex mb-[10px]'>

@@ -22,13 +22,13 @@ const Slider: FunctionComponent = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper h-full w-full rounded-xl"
       >
-        <SwiperSlide className='min-[1200px]:px-[1px] px-[10px]'>
+        <SwiperSlide className='min-[1200px]:px-[1px] px-[1px]'>
             <Image className="rounded-xl" src={City} alt=""/>
         </SwiperSlide>
-        <SwiperSlide className='min-[1200px]:px-[1px] px-[10px]'>
+        <SwiperSlide className='min-[1200px]:px-[1px] px-[1px]'>
             <Image className="rounded-xl" src={City} alt=""/>
         </SwiperSlide>
-        <SwiperSlide className='min-[1200px]:px-[1px] px-[10px]'>
+        <SwiperSlide className='min-[1200px]:px-[1px] px-[1px]'>
             <Image className="rounded-xl" src={City} alt=""/>
         </SwiperSlide>
       </Swiper>
