@@ -30,7 +30,7 @@
     "**/*.tsx",
     "components/Map.jsx",
     ".next/types/**/*.ts"
-, "pages/_apptsx"  ],
+, "pages/_apptsx", "schemas/contacts.ts", "schemas/index.ts", "schemas/properties.ts"  ],
   "exclude": [
     "node_modules"
   ]
