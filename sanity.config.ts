@@ -6,7 +6,7 @@ import {schemaTypes} from './schemas'
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_STUDIO_PROJECT_ID!;
 const dataset = process.env.NEXT_PUBLIC_SANITY_STUDIO_DATASET!;
-const apiVersion = process.env.NEXT_PUBLIC_SANITY_STUDIO_API_VERSION;
+const apiVersion = process.env.NEXT_PUBLIC_SANITY_STUDIO_API_VERSION!;
 
 export default defineConfig({
   basePath: "/studio",
