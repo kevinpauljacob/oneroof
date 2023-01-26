@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/Map.jsx",
+    "components/Map.tsx",
     ".next/types/**/*.ts"
 , "pages/_apptsx", "schemas/contacts.ts", "schemas/index.ts", "schemas/properties.ts"  ],
   "exclude": [

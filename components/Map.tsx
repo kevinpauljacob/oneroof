@@ -1,4 +1,8 @@
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
+import { PropertyType } from '../typings'
+interface Props {
+    property: PropertyType,
+}
 
 function MapComponent() {
   return (
@@ -12,9 +16,9 @@ function MapComponent() {
   );
 }
 
-export default function Map() {
+export default function Map({ property }: Props) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
   
   if (!isLoaded) return <div>Loading...</div>;
