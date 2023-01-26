@@ -45,6 +45,11 @@ export default defineType({
         title: 'Bathrooms'
         }),
         defineField({
+        name: 'rent',
+        type: 'number',
+        title: 'Rent',
+        }),
+        defineField({
         name: 'food',
         type: 'string',
         title: 'Food'
