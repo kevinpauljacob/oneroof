@@ -1,7 +1,14 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
+import { AppContext } from "../context/AppContext"
 import { GoSearch } from 'react-icons/go'
 
 const Hero: FunctionComponent = () => {
+  const {searchItem, setSearchItem} = useContext(AppContext);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchItem(e.target.value);
+  }
+  console.log(searchItem)
+
   return (
     <>
     <div className="relative flex flex-col items-center bg-gray-50 text-neutral-700 bg-clip-text w-[80%] mx-auto">
@@ -15,18 +22,15 @@ const Hero: FunctionComponent = () => {
         <p className="text-[20px] text-center font-semibold">
           Renting options near SRMIST made easy!
         </p>
-        <div className="flex justify-between items-center text-neutral-600 bg-neutral-300 rounded-lg shadow-2xl w-full px-[30px] py-[10px] min-[1200px]:my-[50px] my-[25px]">
-          <span className="font-bold">
-            Search for PG&apos;s and Apartments.
-          </span>
-          <span>
-            <GoSearch/>
-          </span>
-        </div> 
+        <input 
+          className="z-10 flex justify-between items-center text-neutral-600 placeholder-neutral-600 bg-neutral-500/40 rounded-lg shadow-2xl w-full px-[20px] py-[10px] min-[1200px]:my-[50px] my-[25px] font-bold focus:outline focus:ring-neutral-400" 
+          placeholder="Search for PG&apos;s and Apartments." 
+          type="text" 
+          value={searchItem} 
+          onChange={handleChange}
+        /> 
         <div className="absolute top-[20%] left-[25%] bg-[#A49DEA] p-[200px] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob1"></div>
         <div className="absolute top-[-20%] left-[-15%] bg-[#9CD2F4] p-[200px] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob2"></div>
-        {/* <div className="absolute top-[30%] left-[30%] bg-pink-300 p-[150px] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob3"></div>
-        <div className="absolute top-[15%] right-[25%] bg-yellow-300 p-[170px] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob3"></div> */}
     </div>
     </>
   )

@@ -80,22 +80,22 @@ export default defineType({
         title: 'Sharing Options'
         }),
         defineField({
-            name: 'phonenumber',
-            type: 'reference',
+            name: 'phoneNumber',
+            type: 'array',
             title: 'Phone Number',
-            to: {type: 'contacts'}
+            of: [{type: 'number'}]
         }),
         defineField({
             name: 'landline',
-            type: 'reference',
+            type: 'array',
             title: 'Landline',
-            to: {type: 'contacts'}
+            of: [{type: 'number'}]
         }),
         defineField({
-            name: 'imageURL',
-            type: 'reference',
-            title: 'imageURL',
-            to: {type: 'images'}
+            name: 'images',
+            type: 'array',
+            title: 'Images',
+            of: [{type: 'image'}]
         }),
     ]
 })

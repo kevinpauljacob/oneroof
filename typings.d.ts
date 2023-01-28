@@ -25,6 +25,3 @@ export interface PropertyType {
     rent: number,
 } 
 
-export interface GoogleMapsAPIKey {
-  NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: string,
-}

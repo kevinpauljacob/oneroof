@@ -30,7 +30,7 @@
     "**/*.tsx",
     "components/Map.tsx",
     ".next/types/**/*.ts"
-, "pages/_apptsx", "schemas/contacts.ts", "schemas/index.ts", "schemas/properties.ts"  ],
+, "pages/_apptsx", "schemas/contacts.ts", "schemas/index.ts", "schemas/properties.ts", "components/ContributeForm.jsx"  ],
   "exclude": [
     "node_modules"
   ]
