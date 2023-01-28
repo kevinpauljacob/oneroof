@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PropertyPage = ( { property }: Props ) => {
-    const title = property.property;
+    const title = property.propertyName;
   return (
     <>
         <Head>
@@ -50,29 +50,34 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const query = `*[_type == "properties" && slug.current == $slug] [0]{
+    const query = `*[_type == "properties" && slug.current == $slug] [0] {
         _id,
-        property,
+        propertyName,
         location,
         slug,
         gender,
         distance,
         rooms,
+        sharingOptions,
         bathrooms,
         food,
+        ro,
+        canWater,
+        powerBackup,
         wifi,
         refrigerator,
-        washingmachine,
-        airconditioner,
-        sharingoptions,
-        phonenumber->{
-          phonenumber,
-          landline
-        },
-        imageURL->{
-          imageURL
-        },
+        washingMachine,
+        airConditioner,
+        extraEB,
+        inTime,
+        bookingCharges,
+        propertyInChargeName,
+        phoneNumber[0],
+        landline[0],  
         rent,
+        images[],
+        latitude,
+        longitude,  
       }`;
     
     const property = await sanityClient.fetch(query, {

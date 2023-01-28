@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -6,8 +5,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from 'next/image'
 import City from "../public/assets/city.jpg"
+import { PropertyType } from '../typings'
+interface Props {
+    property: PropertyType,
+}
 
-const Slider: FunctionComponent = () => {
+const Slider = ({ property }: Props) => {
   return (
     <Swiper
         slidesPerView={1}
@@ -22,15 +25,13 @@ const Slider: FunctionComponent = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper h-full w-full rounded-xl"
       >
-        <SwiperSlide className='min-[1200px]:px-[1px] px-[1px]'>
-            <Image className="rounded-xl" src={City} alt=""/>
-        </SwiperSlide>
-        <SwiperSlide className='min-[1200px]:px-[1px] px-[1px]'>
-            <Image className="rounded-xl" src={City} alt=""/>
-        </SwiperSlide>
-        <SwiperSlide className='min-[1200px]:px-[1px] px-[1px]'>
-            <Image className="rounded-xl" src={City} alt=""/>
-        </SwiperSlide>
+        {
+          property.images.map((image: string) => (
+            <SwiperSlide key={property._id} className='min-[1200px]:px-[1px] px-[1px]'>
+              <img className="w-full rounded-xl object-contain" src={image} alt=""/>
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
   )
 }

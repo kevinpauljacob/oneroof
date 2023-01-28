@@ -46,15 +46,13 @@ export default Home;
 export const getServerSideProps = async () => {
   const query = `*[_type == "properties"]{
    _id,
-   property,
+   propertyName,
    location,
    slug,
    gender,
    distance,
    rooms,
-   imageURL->{
-     imageURL
-   },
+   images[], 
    rent,
  }`;
 

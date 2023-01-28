@@ -6,78 +6,108 @@ export default defineType({
     title: 'Properties',
     fields: [
         defineField({
-        name: 'property',
-        type: 'string',
-        title: 'Property Name'
+            name: 'propertyName',
+            type: 'string',
+            title: 'Property Name'
         }),
         defineField({
-        name: 'location',
-        type: 'string',
-        title: 'Location'
+            name: 'location',
+            type: 'string',
+            title: 'Location'
         }),
         defineField({
-        name: 'slug',
-        type: 'slug',
-        title: 'Slug',
-        options: {
-            source: 'property',
-            maxLength: 96,
-        },
+            name: 'slug',
+            type: 'slug',
+            title: 'Slug',
+            options: {
+                source: 'property',
+                maxLength: 96,
+            },
         }),
         defineField({
-        name: 'gender',
-        type: 'string',
-        title: 'Gender'
+            name: 'gender',
+            type: 'string',
+            title: 'Gender'
         }),
         defineField({
-        name: 'distance',
-        type: 'string',
-        title: 'Distance from Campus'
+            name: 'distance',
+            type: 'string',
+            title: 'Distance from Campus'
         }),
         defineField({
-        name: 'rooms',
-        type: 'number',
-        title: 'Rooms'
+            name: 'rooms',
+            type: 'number',
+            title: 'Rooms'
         }),
         defineField({
-        name: 'bathrooms',
-        type: 'number',
-        title: 'Bathrooms'
+            name: 'sharingOptions',
+            type: 'string',
+            title: 'Sharing Options'
         }),
         defineField({
-        name: 'rent',
-        type: 'number',
-        title: 'Rent',
+            name: 'bathrooms',
+            type: 'number',
+            title: 'Bathrooms'
         }),
         defineField({
-        name: 'food',
-        type: 'string',
-        title: 'Food'
+            name: 'food',
+            type: 'string',
+            title: 'Food'
         }),
         defineField({
-        name: 'wifi',
-        type: 'string',
-        title: 'Wifi'
+            name: 'ro',
+            type: 'string',
+            title: 'R.O. Unit'
         }),
         defineField({
-        name: 'refrigerator',
-        type: 'string',
-        title: 'Refrigerator'
+            name: 'canWater',
+            type: 'string',
+            title: 'Can Water'
         }),
         defineField({
-        name: 'washingmachine',
-        type: 'string',
-        title: 'Washing Machine'
+            name: 'powerBackup',
+            type: 'string',
+            title: 'Power Backup'
         }),
         defineField({
-        name: 'airconditioner',
-        type: 'string',
-        title: 'Air Conditioner'
+            name: 'wifi',
+            type: 'string',
+            title: 'Wifi'
         }),
         defineField({
-        name: 'sharingoptions',
-        type: 'string',
-        title: 'Sharing Options'
+            name: 'refrigerator',
+            type: 'string',
+            title: 'Refrigerator'
+        }),
+        defineField({
+            name: 'washingMachine',
+            type: 'string',
+            title: 'Washing Machine'
+        }),
+        defineField({
+            name: 'airConditioner',
+            type: 'string',
+            title: 'Air Conditioner'
+        }),
+        defineField({
+            name: 'extraEB',
+            type: 'string',
+            title: 'Extra E.B. for AC'
+        }),
+        defineField({
+            name: 'inTime',
+            type: 'string',
+            title: 'In-Time'
+        }),
+        defineField({
+            name: 'bookingCharges',
+            type: 'string',
+            title: 'Booking Charges'
+        }),
+        defineField({
+            name: 'propertyInChargeName',
+            type: 'string',
+            title: 'Property In-Charge Name'
         }),
         defineField({
             name: 'phoneNumber',
@@ -92,10 +122,25 @@ export default defineType({
             of: [{type: 'number'}]
         }),
         defineField({
+            name: 'rent',
+            type: 'number',
+            title: 'Rent',
+        }),
+        defineField({
             name: 'images',
             type: 'array',
             title: 'Images',
-            of: [{type: 'image'}]
+            of: [{type: 'url'}]
+        }),
+        defineField({
+            name: 'latitude',
+            type: 'number',
+            title: 'Latitude'
+        }),
+        defineField({
+            name: 'longitude',
+            type: 'number',
+            title: 'Longitude'
         }),
     ]
 })

@@ -4,23 +4,31 @@ interface Props {
     property: PropertyType,
 }
 
-function MapComponent() {
+interface Location {
+  lat: number,
+  lng: number
+}
+
+function MapComponent({ lat, lng }: Location) {
+
   return (
     <GoogleMap
       zoom={16}
-      center={{ lat: 12.827649, lng: 80.048997 }}
+      center={{ lat, lng }}
       mapContainerClassName="rounded-xl h-full w-full"
     >
-      <MarkerF position={{ lat: 12.827649, lng: 80.048997 }} />
+      <MarkerF position={{ lat, lng }} />
     </GoogleMap>
   );
 }
 
 export default function Map({ property }: Props) {
+  const lat = property.latitude;
+  const lng = property.longitude;
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
   
   if (!isLoaded) return <div>Loading...</div>;
-  return <MapComponent/>;
+  return <MapComponent lat={lat} lng={lng}/>;
 }

@@ -17,7 +17,7 @@ const Cards = ({ properties }: Props) => {
         properties
         .filter(property => {
           if(searchItem == "") return property
-          else if (property.property.toLowerCase().includes(searchItem.toLowerCase())) return property
+          else if (property.propertyName.toLowerCase().includes(searchItem.toLowerCase())) return property
         })
         .map(property => (
           <Link 
@@ -26,10 +26,10 @@ const Cards = ({ properties }: Props) => {
             className="mx-auto"
           >
             <div className='relative text-neutral-600 bg-neutral-200/50 shadow-2xl cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-xl max-w-[300px] p-[15px]'>
-              <img className='rounded-2xl' src={property.imageURL.imageURL} alt="Property"/>
+              <img className='max-h-[200px] max-w-[250px] object-contain rounded-2xl' src={property.images} alt="Property"/>
               <div className='h-[170px] w-full'>
                 <h3 className='text-[20px] font-bold mt-[10px]'>
-                  {property.property}
+                  {property.propertyName}
                 </h3>
                 <p className='flex mb-[10px]'>
                   <HiOutlineMapPin size={20}/>
