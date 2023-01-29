@@ -228,7 +228,7 @@ const PropertyDetails = ({ property }: Props) => {
                 <div className='rounded-xl max-h-[400px] min-[1200px]:h-[45%] w-full max-w-[700px] max-[1199px]:my-[50px] my-[20px]'>
                     <Slider property={property}/>
                 </div>
-                <div className='hidden min-[1199px]:flex justify-between text-[30px] max-w-[700px] font-bold'>
+                <div className='hidden min-[1199px]:flex justify-between text-[30px] max-w-[700px] font-bold bg-neutral-200/50 rounded-md py-[10px] px-[15px]'>
                     <span>Rent</span>
                     <div className='text-green-600'>
                         <span>Rs.{property.rent}</span>
