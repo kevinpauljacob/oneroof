@@ -1,6 +1,5 @@
 import { FunctionComponent, useContext } from "react";
 import { AppContext } from "../context/AppContext"
-import { GoSearch } from 'react-icons/go'
 
 const Hero: FunctionComponent = () => {
   const {searchItem, setSearchItem} = useContext(AppContext);

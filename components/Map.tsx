@@ -15,7 +15,7 @@ function MapComponent({ lat, lng }: Location) {
     <GoogleMap
       zoom={16}
       center={{ lat, lng }}
-      mapContainerClassName="rounded-xl h-full w-full"
+      mapContainerClassName="rounded-xl sm:rounded-none h-full w-full"
     >
       <MarkerF position={{ lat, lng }} />
     </GoogleMap>
