@@ -6,7 +6,7 @@ import { FaLinkedin, FaTwitterSquare, FaGithubSquare, FaBlackTie } from 'react-i
 
 const Socials: FunctionComponent = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
         <div className='flex justify-center font-semibold'>
             Made with 
             <span className='mx-[5px]'>
@@ -19,9 +19,10 @@ const Socials: FunctionComponent = () => {
                 <Link href="">Github</Link>
             </span> 
         </div>
-        <Link href="/contribute" className='flex items-center font-bold border-2 rounded-lg border-black shadow-2xl hover:bg-neutral-600 hover:text-white transition duration-500 w-max mx-auto p-1.5'>
-            <span className='px-[5px]'></span>
-            Contribute to the Project
+        <Link href="/contribute" className='font-bold shadow-2xl rounded-lg bg-neutral-600/30 text-neutral-700 hover:text-neutral-300 hover:bg-neutral-600/60 transition duration-300 w-max p-2 cursor-pointer my-[10px]'>
+            <div>
+                Contribute to the Project
+            </div>
         </Link>
     </div>
   )
