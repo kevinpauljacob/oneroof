@@ -19,9 +19,10 @@ const Socials: FunctionComponent = () => {
                 <Link href="">Github</Link>
             </span> 
         </div>
-        <div className='flex justify-center font-semibold animate-pulse my-[10px]'>
-            <Link href="/contribute">Contribute to the Project</Link>
-        </div>
+        <Link href="/contribute" className='flex items-center font-bold border-2 rounded-lg border-black shadow-2xl hover:bg-neutral-600 hover:text-white transition duration-500 w-max mx-auto p-1.5'>
+            <span className='px-[5px]'></span>
+            Contribute to the Project
+        </Link>
     </div>
   )
 }
