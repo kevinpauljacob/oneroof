@@ -32,7 +32,7 @@ const PropertyDetails = ({ property }: Props) => {
         <div className='relative flex flex-col md:flex-row w-full'>
             <section className='flex flex-col justify-between px-[15px] sm:px-[50px] xl:px-[100px] py-[60px] md:w-[65%] w-full'>
                 <div>
-                    <Link href="/" className='flex items-center font-bold border-2 rounded-lg border-black shadow-2xl hover:bg-neutral-400 hover:text-white transition duration-500 w-max p-1.5'>
+                    <Link href="/" className='flex items-center font-bold border-2 rounded-lg border-black shadow-2xl hover:bg-neutral-600 hover:text-white transition duration-500 w-max p-1.5'>
                         <span className='px-[5px]'><IoReturnDownBack/></span>
                         Go Back
                     </Link>
@@ -333,11 +333,11 @@ const PropertyDetails = ({ property }: Props) => {
                     </ul>
                 </div>
             </section>
-            <section className='md:fixed top-0 right-0 flex flex-col justify-between h-[300px] md:h-screen md:w-[35%] w-full drop-shadow-2xl md:drop-shadow-xl px-[15px] sm:px-[50px] md:px-0 mx-auto mb-16'>
+            <section className='md:fixed top-0 right-0 flex flex-col justify-between md:h-screen md:w-[35%] w-full drop-shadow-3xl md:drop-shadow-xl px-[15px] sm:px-[50px] md:px-0 mx-auto mb-16'>
                 <div className='h-[300px] md:min-h-[70%] w-full'>
                     <Map property={property}/>
                 </div>
-                <button className='relative md:min-h-[30%]' onClick={handleSlider}>
+                <button className='relative md:min-h-[30%] mt-10 md:mt-0' onClick={handleSlider}>
                     {property.images.map((image: string) => (
                         <div key={property._id} className="flex">
                             <div className="h-full w-full">
@@ -358,10 +358,10 @@ const PropertyDetails = ({ property }: Props) => {
             {slider 
                     ? 
                         <div className='fixed top-0 left-0 z-10 flex justify-center items-center bg-neutral-600/70 h-screen w-full'>
-                            <div className='w-[60%] h-[60%]'>
+                            <div className='w-[80%] h-[80%]'>
                                 <Slider property={property}/>
                             </div>
-                            <button className='fixed top-10 right-10 z-10 text-white' onClick={handleSlider}>
+                            <button className='fixed top-10 right-10 z-10 text-neutral-800' onClick={handleSlider}>
                                 <AiFillCloseCircle size={35}/>
                             </button>
                         </div>

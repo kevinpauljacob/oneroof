@@ -27,8 +27,8 @@ const Slider = ({ property }: Props) => {
       >
         {
           property.images.map((image: string) => (
-            <SwiperSlide key={property._id} className='min-[1200px]:px-[1px] px-[1px]'>
-              <img className="w-full rounded-xl object-contain" src={image} alt=""/>
+            <SwiperSlide key={property._id} className='flex justify-center items-center min-[1200px]:px-[1px] px-[1px]'>
+              <img className="rounded-xl" src={image} alt=""/>
             </SwiperSlide>
           ))
         }

@@ -20,7 +20,7 @@ const Socials: FunctionComponent = () => {
             </span> 
         </div>
         <div className='flex justify-center font-semibold animate-pulse my-[10px]'>
-            <Link href="/contribute">Contribute to the page</Link>
+            <Link href="/contribute">Contribute to the Project</Link>
         </div>
     </div>
   )
