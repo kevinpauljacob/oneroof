@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { AiFillCloseCircle } from 'react-icons/ai'
+import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlineMapPin } from 'react-icons/hi2'
 import { MdOutlineCall, MdOutlineFastfood, MdWaterDrop } from 'react-icons/md'
 import { FaFan, FaToilet } from 'react-icons/fa'
@@ -361,8 +361,8 @@ const PropertyDetails = ({ property }: Props) => {
                             <div className='w-[80%] h-[80%]'>
                                 <Slider property={property}/>
                             </div>
-                            <button className='fixed top-10 right-10 z-10 text-neutral-800' onClick={handleSlider}>
-                                <AiFillCloseCircle size={35}/>
+                            <button className='bg-neutral-800/80 rounded-full fixed top-10 right-10 z-10 text-white p-1' onClick={handleSlider}>
+                                <AiOutlineClose size={25}/>
                             </button>
                         </div>
                     : null
