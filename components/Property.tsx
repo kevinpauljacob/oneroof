@@ -334,26 +334,24 @@ const PropertyDetails = ({ property }: Props) => {
                 </div>
             </section>
             <section className='md:fixed top-0 right-0 flex flex-col justify-between md:h-screen md:w-[35%] w-full drop-shadow-3xl md:drop-shadow-xl px-[15px] sm:px-[50px] md:px-0 mx-auto mb-16'>
-                <div className='h-[300px] md:min-h-[70%] w-full'>
+                <button className='relative md:min-h-[40%]' onClick={handleSlider}>
+                    <div key={property._id} className="flex">
+                        <div className="h-full w-full">
+                            <img className='h-full w-full object-contain' src={property.images[0]} alt="Property Image"/>
+                        </div>
+                        <div className='absolute top-0 left-0 text-white text-left font-bold bg-neutral-600/50 h-full w-full p-3'>
+                            <p className='text-xl'>
+                                Photos
+                            </p>
+                            <p>
+                                Click to View in Full Screen
+                            </p>
+                        </div>
+                    </div>
+                </button>
+                <div className='h-[300px] md:min-h-[60%] w-full mt-10 md:mt-0'>
                     <Map property={property}/>
                 </div>
-                <button className='relative md:min-h-[30%] mt-10 md:mt-0' onClick={handleSlider}>
-                    {property.images.map((image: string) => (
-                        <div key={property._id} className="flex">
-                            <div className="h-full w-full">
-                                <img className='h-full w-full object-contain' src={image} alt="Property Image"/>
-                            </div>
-                            <div className='absolute top-0 left-0 text-white text-left font-bold bg-neutral-600/50 h-full w-full p-3'>
-                                <p className='text-xl'>
-                                    Photos
-                                </p>
-                                <p>
-                                    Click to View in Full Screen
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                </button>
             </section>
             {slider 
                     ? 
