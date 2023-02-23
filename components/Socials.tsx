@@ -15,15 +15,15 @@ const Socials: FunctionComponent = () => {
         </div>
         <div className='flex justify-center font-semibold my-[10px]'>
             View source code on 
-            <span className='underline underline-offset-2 mx-[5px]'>
-                <Link href="">Github</Link>
+            <span className='underline underline-offset-2 mx-[5px] animate-pulse'>
+                <Link href="https://github.com/itaintkevin/oneroof">Github</Link>
             </span> 
         </div>
-        <Link href="/contribute" className='font-bold shadow-2xl rounded-lg bg-neutral-600/30 text-neutral-700 hover:text-neutral-300 hover:bg-neutral-600/60 transition duration-300 w-max p-2 cursor-pointer my-[10px]'>
+        {/* <Link href="/contribute" className='font-bold shadow-2xl rounded-lg bg-neutral-600/30 text-neutral-700 hover:text-neutral-300 hover:bg-neutral-600/60 transition duration-300 w-max p-2 cursor-pointer my-[10px]'>
             <div>
-                Contribute to the Project
+                Add Property
             </div>
-        </Link>
+        </Link> */}
     </div>
   )
 }

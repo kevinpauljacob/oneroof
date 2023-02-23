@@ -36,15 +36,15 @@ const PropertyDetails = ({ property }: Props) => {
                         <span className='px-[5px]'><IoReturnDownBack/></span>
                         Go Back
                     </Link>
-                    <div className='bg-gradient-to-tr from-[#C2B9F2]/50 to-[#ACDFF2]/50 rounded-lg drop-shadow-2xl border p-5 my-[30px]'>
-                        <h3 className='text-[30px] font-bold'>
+                    <div className='bg-gradient-to-tr from-[#C2B9F2]/50 to-[#ACDFF2]/50 rounded-lg drop-shadow-2xl border px-5 py-10 my-[30px]'>
+                        <h3 className='text-[35px] font-bold'>
                             {property.propertyName}
                         </h3>
                         <p className='flex font-bold'>
                             <span><HiOutlineMapPin size={20}/></span>
                             {property.location}
                         </p>
-                        <p className='text-[#228B22] text-xl mt-1.5'>
+                        <p className='text-[#228B22] text-2xl mt-1.5'>
                                 <span>Rs.{property.rent}</span>
                         </p>
                     </div>
@@ -54,7 +54,7 @@ const PropertyDetails = ({ property }: Props) => {
                                 Property Details
                             </p>
                             <div className='flex flex-wrap'>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <BsFillPersonFill size={25}/>
                                     </div>
@@ -67,7 +67,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <GiPathDistance size={25}/>
                                     </div>
@@ -80,7 +80,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <BsHouseDoor size={25}/>
                                     </div>
@@ -93,7 +93,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <FaToilet size={25}/>
                                     </div>
@@ -106,7 +106,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <BsClock size={25}/>
                                     </div>
@@ -126,7 +126,7 @@ const PropertyDetails = ({ property }: Props) => {
                                 Amenities
                             </p>
                             <div className='flex flex-wrap'>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <BsWifi size={25}/>
                                     </div>
@@ -139,7 +139,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <CgSmartHomeRefrigerator size={25}/>
                                     </div>
@@ -152,7 +152,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <GiWashingMachine size={25}/>
                                     </div>
@@ -165,7 +165,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <FaFan size={25}/>
                                     </div>
@@ -178,7 +178,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <GiElectric size={25}/>
                                     </div>
@@ -191,7 +191,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <MdWaterDrop size={25}/>
                                     </div>
@@ -204,7 +204,7 @@ const PropertyDetails = ({ property }: Props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex items-center px-4 py-2'>
+                                <div className='flex items-center px-4 py-2 w-[240px]'>
                                     <div className='text-neutral-700 pr-[10px]'>
                                         <GiWaterGallon size={25}/>
                                     </div>
