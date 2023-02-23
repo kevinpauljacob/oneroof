@@ -19,7 +19,7 @@ const Hero: FunctionComponent = () => {
           OneRoof
         </div>
         <p className="text-[20px] text-center font-semibold">
-          Renting options near SRMIST made easy!
+          Finding your next home made easy!
         </p>
         <input 
           className="z-10 flex justify-between items-center text-neutral-600 placeholder-neutral-600 bg-neutral-500/40 rounded-lg shadow-2xl w-full px-[20px] py-[10px] min-[1200px]:my-[50px] my-[25px] font-bold focus:outline focus:ring-neutral-400" 
