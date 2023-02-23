@@ -20,7 +20,7 @@ const Home = ({ properties }: Props) => {
     <>
       <Head>
         <title>OneRoof</title>
-        <meta name="description" content="Renting options near SRM made easy." />
+        <meta name="description" content="Finding your next home made easy!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
