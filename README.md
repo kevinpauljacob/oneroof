@@ -7,9 +7,11 @@
 
 **OneRoof's backend is powered by Sanity CMS, which makes it easy for administrators to manage and update the website's content. With its user-friendly interface, administrators can quickly add or edit property listings, update property details, and manage user accounts.**
 
-| Properties Listing | Property Details | Image Carousel | Sanity Studio |
-| --- | --- | --- | --- |
-| ![Image 1](https://cdn.discordapp.com/attachments/918024642860548126/1078338924247781449/mobile_5.png) | ![Image 2](https://cdn.discordapp.com/attachments/918024642860548126/1078338923987730492/mobile_6.png) | ![Image 3](https://cdn.discordapp.com/attachments/918024642860548126/1078338923706728550/mobile_7.png) | ![Image 4](https://cdn.discordapp.com/attachments/918024642860548126/1078345503999266967/mobile_8.png) |
+| Properties Listing | Property Details |
+| --- | --- |
+| ![Image 1](https://cdn.discordapp.com/attachments/918024642860548126/1078338924247781449/mobile_5.png) | ![Image 2](https://cdn.discordapp.com/attachments/918024642860548126/1078338923987730492/mobile_6.png) |
+| Image Carousel | Sanity Studio |
+| ![Image 3](https://cdn.discordapp.com/attachments/918024642860548126/1078338923706728550/mobile_7.png) | ![Image 4](https://cdn.discordapp.com/attachments/918024642860548126/1078345503999266967/mobile_8.png) |
 
 ## Deployment 
 
