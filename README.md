@@ -1,12 +1,15 @@
 
 # OneRoof
 
-OneRoof is a modern and elegant real estate website that allows users to easily search and filter properties by name. The website is built using Next.js, Typescript, Tailwind CSS, and Sanity CMS for content management, ensuring a seamless user experience.
+**OneRoof is a modern and elegant real estate website that allows users to search and filter properties by name easily. The website is built using Next.js, Typescript, Tailwind CSS, and Sanity CMS for content management, ensuring a seamless user experience.**
 
-Each property has its own dedicated page, which includes detailed information about the property, including photos, location on a Google Map, and all relevant property details divided into sections. The website's intuitive UI ensures that users can easily find the information they need, whether they are browsing on a desktop or mobile device.
+**Each property has its own dedicated page, which includes detailed information about the property, including photos, location on a Google Map, and all relevant property details divided into sections. The website's intuitive UI ensures that users can easily find the information they need while browsing on a desktop or mobile device.**
 
-OneRoof's backend is powered by Sanity CMS, which makes it easy for administrators to manage and update the website's content. With its user-friendly interface, administrators can quickly add or edit property listings, update property details, and manage user accounts.
+**OneRoof's backend is powered by Sanity CMS, which makes it easy for administrators to manage and update the website's content. With its user-friendly interface, administrators can quickly add or edit property listings, update property details, and manage user accounts.**
 
+| Properties Listing | Property Details | Image Carousel | Sanity Studio |
+| --- | --- | --- | --- |
+| ![Image 1](https://cdn.discordapp.com/attachments/918024642860548126/1078338924247781449/mobile_5.png) | ![Image 2](https://cdn.discordapp.com/attachments/918024642860548126/1078338923987730492/mobile_6.png) | ![Image 3](https://cdn.discordapp.com/attachments/918024642860548126/1078338923706728550/mobile_7.png) | ![Image 4](https://cdn.discordapp.com/attachments/918024642860548126/1078345503999266967/mobile_8.png) |
 
 ## Deployment 
 
@@ -15,11 +18,11 @@ OneRoof's backend is powered by Sanity CMS, which makes it easy for administrato
 
 ## Technologies Used
 
-- 🖥️ Next.js: Frontend framework
+- 🖥️ Frontend: Built with Next.js
 - 💻 Backend: Powered by Sanity CMS
-- 🎯 React-Icons: Icon library
-- 💻 Frontend & Backend: Implemented with TypeScript 
-- 🎨 Styling: Tailwind CSS
+- 🎯 React-Icons: Icon Library
+- 💻 Language: Written in TypeScript 
+- 🎨 Styling: Styled using Tailwind CSS
 - 🗺️ Maps: Google Maps API
 
 
@@ -36,44 +39,16 @@ OneRoof's backend is powered by Sanity CMS, which makes it easy for administrato
 
 ## Run Locally
 
-Clone the project
-
 ```bash
+  // Clone the Repository
   git clone https://github.com/itaintkevin/oneroof
-```
-
-Go to the project directory
-
-```bash
+  
+  // Go to the project directory
   cd oneroof
-```
 
-Install dependencies
-
-```bash
+  // Install dependencies
   yarn
-```
 
-Start the server
-
-```bash
+  // Start the Server
   yarn run dev
 ```
-
-To edit Sanity Studio
-
-```bash
-  go to http://localhost:3000/studio
-```
-
-
-## Screenshots
-
-![App Screenshot](https://cdn.discordapp.com/attachments/918024642860548126/1078338924247781449/mobile_5.png)
-
-![App Screenshot](https://cdn.discordapp.com/attachments/918024642860548126/1078338923987730492/mobile_6.png)
-
-![App Screenshot](https://cdn.discordapp.com/attachments/918024642860548126/1078338923706728550/mobile_7.png)
-
-![App Screenshot](https://cdn.discordapp.com/attachments/918024642860548126/1078345503999266967/mobile_8.png)
-
